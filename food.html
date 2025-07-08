@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Talk Tiles - Food</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/Talk Tiles.png">
+</head>
+<body>
+  <header>
+    <div class="title-wrapper">
+      <img src="images/Talk Tiles.png" alt="Title Icon" class="title-icon">
+      <div class="title-text">
+        <h1><u><b>Talk Tiles: Food & Drink</b></u></h1>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <a href="index.html" class="nav-item">
+        <img src="images/home_icon.png" alt="Home Icon"> Home
+      </a>
+      <a href="key words.html" class="nav-item">
+        <img src="images/key_words_icon.png" alt="key words icon Icon"> key words
+      </a>
+    </nav>
+  </header>
+
+  <!-- Sentence Bar -->
+  <div class="sentence-bar">
+    <div class="sentence-tiles"></div>
+    <div class="sentence-actions">
+      <button id="play-sentence">Play Sentence</button>
+      <button id="clear-sentence">Clear</button>
+    </div>
+  </div>
+
+  <!-- Food Tiles -->
+  <div class="tile-section">
+    <div class="tiles">
+      <button class="tile" data-audio="audio/apple.mp3">
+        <img src="images/apple.png" alt="Apple">
+        <span>Apple</span>
+      </button>
+      <button class="tile" data-audio="audio/water.mp3">
+        <img src="images/water.png" alt="Water">
+        <span>Water</span>
+      </button>
+      <!-- Add more food tiles here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
