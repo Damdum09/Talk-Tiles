@@ -1,0 +1,259 @@
+/* === Base Styles === */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+/* === Header === */
+header {
+    background-color: #00c2cb;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.title-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-text h1 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.creator-note {
+    font-size: 0.9rem;
+    margin: 0 0 10px 0;
+}
+
+/* === Navbar === */
+.navbar {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px auto;
+    justify-content: center;
+    max-width: 90%;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #00c2cb;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-size: 0.9rem;
+}
+
+.nav-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.nav-item:hover {
+    background-color: #009ca1;
+}
+
+/* === Tile Section === */
+.tile-section {
+    padding: 5px 1px;
+}
+
+.tile-section h2 {
+    text-align: center;
+    color: #00c2cb;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* === Tiles === */
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.tile {
+    background-color: white;
+    border: 2px solid #00c2cb;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.tile:hover {
+    background-color: #e0f7f8;
+    transform: scale(1.05);
+}
+
+.tile img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 5px;
+}
+
+.tile span {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+/* === Sentence Builder === */
+.sentence-bar {
+    background-color: #ffffff;
+    border: 2px solid #00c2cb;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px auto 20px;
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.sentence-tiles {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+#play-sentence {
+    background-color: #00cb65;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#clear-sentence {
+    background-color: #cb2f00;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sentence-tile {
+    background-color: #00c2cb;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sentence-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.sentence-actions button {
+    background-color: #00c2cb;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.sentence-actions button:hover {
+    background-color: #009ca1;
+}
+
+/* === Responsive Styles === */
+@media (max-width: 768px) {
+    .title-wrapper {
+        flex-direction: column;
+    }
+
+    .tiles {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    .sentence-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .sentence-actions {
+        justify-content: center;
+    }
+
+    .nav-item {
+        flex: 1 1 calc(50% - 10px);
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .tile img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .nav-item {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    .tile-section h2 {
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Talk Tiles - Food</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/Talk Tiles.png" />
+</head>
+<body>
+  <header>
+    <div class="title-wrapper">
+      <img src="images/Talk Tiles.png" alt="Talk Tiles Logo" class="title-icon" />
+      <div class="title-text">
+        <h1><u><b>Talk Tiles: Food &amp; Drink</b></u></h1>
+      </div>
+    </div>
+
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="index.html" class="nav-item">
+        <img src="images/home_icon.png" alt="Home Icon" /> Home
+      </a>
+      <a href="key words.html" class="nav-item">
+        <img src="images/key_words_icon.png" alt="Key Words Icon" /> Key Words
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="sentence-bar" aria-label="Sentence builder">
+      <div class="sentence-tiles"></div>
+      <div class="sentence-actions">
+        <button id="play-sentence">Play Sentence</button>
+        <button id="clear-sentence">Clear</button>
+      </div>
+    </section>
+
+    <section class="tile-section" aria-label="Food and Drink Tiles">
+      <h2>Snacks & Drinks</h2>
+      <div class="tiles">
+        <button class="tile" data-audio="audio/apple.mp3">
+          <img src="images/apple.png" alt="Apple" />
+          <span>Apple</span>
+        </button>
+        <button class="tile" data-audio="audio/water.mp3">
+          <img src="images/water.png" alt="Water" />
+          <span>Water</span>
+        </button>
+        <button class="tile" data-audio="audio/yogurt.mp3">
+          <img src="images/yogurt.png" alt="Yogurt" />
+          <span>Yogurt</span>
+        </button>
+        <button class="tile" data-audio="audio/juice.mp3">
+          <img src="images/juice.png" alt="Juice" />
+          <span>Juice</span>
+        </button>
+        <button class="tile" data-audio="audio/peanuts.mp3">
+          <img src="images/peanuts.png" alt="Peanuts" />
+          <span>Peanuts</span>
+        </button>
+        <button class="tile" data-audio="audio/candy.mp3">
+          <img src="images/candy.png" alt="candy" />
+          <span>Candy</span>
+        </button>
+      </div>
+
+      <hr />
+
+      <h2>Meals</h2>
+      <div class="tiles">
+        <button class="tile" data-audio="audio/egg.mp3">
+          <img src="images/egg.png" alt="Egg" />
+          <span>Egg</span>
+        </button>
+        <button class="tile" data-audio="audio/rice.mp3">
+          <img src="images/rice.png" alt="Rice" />
+          <span>Rice</span>
+        </button>
+        <button class="tile" data-audio="audio/pasta.mp3">
+          <img src="images/pasta.png" alt="Pasta" />
+          <span>Pasta</span>
+        </button>
+         <button class="tile" data-audio="audio/fries.mp3">
+          <img src="images/fries.png" alt="fries" />
+          <span>Fries</span>
+        </button>
+        <!-- Add more meal tiles here -->
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

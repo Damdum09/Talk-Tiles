@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Talk Tiles - Outdoor Places</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/Talk Tiles.png" />
+</head>
+<body>
+  <header>
+    <div class="title-wrapper">
+      <img src="images/Talk Tiles.png" alt="Talk Tiles Logo" class="title-icon" />
+      <div class="title-text">
+        <h1><u><b>Talk Tiles: Outdoor Places</b></u></h1>
+      </div>
+    </div>
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="index.html" class="nav-item">
+        <img src="images/home_icon.png" alt="Home Icon" /> Home
+      </a>
+      <a href="key words.html" class="nav-item">
+        <img src="images/key_words_icon.png" alt="Key Words Icon" /> Key Words
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="sentence-bar" aria-label="Sentence builder">
+      <div class="sentence-tiles"></div>
+      <div class="sentence-actions">
+        <button id="play-sentence">Play Sentence</button>
+        <button id="clear-sentence">Clear</button>
+      </div>
+    </section>
+
+    <section class="tile-section" aria-label="Outdoor Places Tiles">
+      <div class="tiles">
+        <button class="tile" data-audio="audio/pool.mp3">
+          <img src="images/Pool.png" alt="Pool" />
+          <span>Pool</span>
+        </button>
+        <button class="tile" data-audio="audio/gym.mp3">
+          <img src="images/gym.jpg" alt="Gym" />
+          <span>Gym</span>
+        </button>
+        <button class="tile" data-audio="audio/park.mp3">
+          <img src="images/park.png" alt="Park" />
+          <span>Park</span>
+        </button>
+        <button class="tile" data-audio="audio/toyshop.mp3">
+          <img src="images/toyshop.png" alt="Toy Shop" />
+          <span>Toy Shop</span>
+        </button>
+        <button class="tile" data-audio="audio/playarea.mp3">
+          <img src="images/playarea.jpg" alt="play area" />
+          <span>Play Area</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
